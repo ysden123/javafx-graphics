@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version "${javafxplugin_version}"
+}
+
+group project_group
+version project_version
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainModule = 'com.stulsoft.graphics'
+    mainClass = 'com.stulsoft.graphics.App'
+}
+
+javafx {
+    version = javafx_version
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+jar {
+    manifest {
+        attributes(
+                "Implementation-Version": archiveVersion
+        )
+    }
+}
