@@ -12,7 +12,7 @@
   ~ Copyright (c) 2022. StulSoft
   -->
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stulsoft.graphics.MainController">
+<AnchorPane prefHeight="394.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stulsoft.graphics.MainController">
     <MenuBar VBox.vgrow="NEVER">
         <Menu mnemonicParsing="false" text="Graphics">
             <MenuItem mnemonicParsing="false" onAction="#onLineWithDots" text="Line Chart with dots" />
@@ -22,5 +22,5 @@
         </Menu>
     </MenuBar>
    <Label layoutX="25.0" layoutY="54.0" text="Graph:" />
-   <VBox fx:id="graph" layoutX="28.0" layoutY="78.0" prefHeight="200.0" prefWidth="545.0" />
+   <VBox fx:id="graph" layoutX="28.0" layoutY="78.0" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="78.0" />
 </AnchorPane>
