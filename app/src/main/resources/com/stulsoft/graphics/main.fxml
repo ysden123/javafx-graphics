@@ -17,6 +17,7 @@
         <Menu mnemonicParsing="false" text="Graphics">
             <MenuItem mnemonicParsing="false" onAction="#onLineWithDots" text="Line Chart with dots" />
             <MenuItem mnemonicParsing="false" onAction="#onLineWithoutDots" text="Line Chart without dots" />
+            <MenuItem mnemonicParsing="false" onAction="#onLineDynamic" text="Line Chart dynamic" />
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" onAction="#onQuit" text="Quit" />
         </Menu>

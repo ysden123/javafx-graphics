@@ -32,4 +32,13 @@ public class MainController {
     public void onQuit() {
         Platform.exit();
     }
+
+    public void onLineDynamic() {
+        var lineChart = LineChartBuilder.buildLineChartDynamic();
+        var children = graph.getChildren();
+        if (!children.isEmpty()){
+            children.remove(0);
+        }
+        children.add(lineChart);
+    }
 }
